@@ -174,8 +174,3 @@ async def handle_check_request(first_message_from_user, train_times):
     finally:
         driver.quit() 
 
-first_message_from_user='Москва, Казань, 13.12, плацкарт и купе, 3200'
-train_times=['23:12 - 11:01','19:16 - 07:50']
-
-import asyncio
-asyncio.run(handle_check_request(first_message_from_user, train_times))
