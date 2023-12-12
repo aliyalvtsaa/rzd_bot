@@ -37,7 +37,7 @@ async def periodic_check():
         for record in user_records:
             chat_id = record["chat_id"]
             user_needs = record["user_needs"]
-            train_times = ['20:40 - 08:00']
+            train_times =record["train_time"]
 
             answer_dict, messages = await handle_check_request(user_needs, train_times)
 
